@@ -1,0 +1,46 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient(to left,red,yellow,black,green,blue,skyblue);
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 60px;
+}
+#p1{
+    font-family: 'Alkatra', cursive;
+    background-color: rgb(237, 235, 242);
+    color: olive;
+    font-size: 20px;   
+}
+.p2{
+    background-color: rgb(9, 8, 12);
+    color: rgb(9, 243, 56);
+    font-size: 20px;   
+}
+#p3{
+    background-color: rgb(187, 241, 8);
+    color: rgb(7, 7, 0);
+    font-size: 20px;
+    font-style: italic;   
+}
+#p3:hover{
+    background-color: beige;
+    color: blueviolet;
+}
+p{
+    background-color: rgb(27, 5, 137);
+    color: white;
+    font-size: 20px;
+}
+img{
+    width: 800px;
+    height: 500px;
+}
+img[alt]{
+    color: rgb(245, 241, 241);
+    background-color: black;
+}
