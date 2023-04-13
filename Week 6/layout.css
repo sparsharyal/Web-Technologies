@@ -1,0 +1,78 @@
+.parent{
+    width: 100%;
+}
+.son{
+    width: 50%;
+    float: left;
+}
+.daughter{
+    width: 50%;
+    float: right;
+}
+h1{
+    text-align: center;
+}
+
+/*mobile devices*/
+@media (min-width:320px) and (max-width:480px){
+h1{
+    background-color: aquamarine;
+    color: brown;
+    text-align: center;
+}
+.son{
+    width: 100%;
+}
+.daughter{
+    width: 100%;
+}
+.son p{
+    width: 100%;
+}
+.daughter img{
+    width: 100%;
+    height: auto;
+}
+}
+/*tablet devices*/
+@media (min-width:481px) and (max-width:768px){
+    h1{
+        background-color: blue;
+        color: green;
+        text-align: center;
+    }
+    .son{
+        width: 100%;
+    }
+    .daughter{
+        width: 100%;
+    }
+    .son p{
+        width: 100%;
+    }
+    .daughter img{
+        width: 100%;
+        height: auto;
+    }
+}
+/*laptop devices*/
+@media (min-width:769px) and (max-width:1024px){
+    h1{
+        background-color: gray;
+        color: silver;
+        text-align: center;
+    }
+    .son{
+        width: 100%;
+    }
+    .daughter{
+        width: 100%;
+    }
+    .son p{
+        width: 100%;
+    }
+    .daughter img{
+        width: 100%;
+        height: auto;
+    }
+}

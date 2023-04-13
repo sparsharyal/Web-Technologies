@@ -1,0 +1,31 @@
+.flex{
+    width: 100%;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:10px
+}
+.box{
+    width: 300px;
+    height: 300px;
+}
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color: aquamarine;
+}
+.box3{
+    background-color: azure;
+}
+.box4{
+    background-color: beige;
+}
+.box5{
+    background-color: bisque;
+}
+.box6{
+    background-color: rgb(248, 12, 12);
+}
