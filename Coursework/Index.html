@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <a class="gotopbtn"href="#"><i class="fa-solid fa-angle-up"></i></a>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <!--------------------------------Intro------------------------------------------->
+ <div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="#"><span>.Spa</span>rsh.</a></div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact </a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm<span> Sparsh  </span>Aryal</h1><br>
+                <p>Self motivated and a hardworking<br> Computer Science student.</p>
+        </div>
+    </div>
+ </div>
+ <!--------------------------------About------------------------------------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/imag.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title"><span><i>About</i></span> <i>Me</i></h1>
+            <p>Hardworking college studen. Good at time management and communication.A highly passionate, competitive and motivated student pursuing
+                degree in Computer Science, lookung for experience in the field that
+                match my academic qualifications.</p>
+        <div class="tab-titles">
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links active-link"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Python</span><br>Building Caesar Cipher </li>
+                <li><span>Premier Pro</span><br>Video Editing Software</li>
+                <li><span>Photoshop</span><br>Photo Editing Software</li>
+            </ul>
+            </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022 - Current</span><br>Designing Web/App interfaces</li>
+                <li><span>2020 - 2022</span><br>Web Development</li>
+                <li><span>2018 - 2020</span><br>Video and photo editing software</li>
+            </ul>
+            </div>
+        <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 - Present</span><br>Bsc(hons) at Herald College</li>
+                <li><span>2020 - 2022</span><br>+2 from Liverpool International College</li>
+                <li><span>2008 - 2020</span><br>SEE from Usha Bal Valtika School</li>
+              </ul>
+           </div>
+       </div>
+    </div>
+</div>
+</div>
+</div>
+ <!--------------------------------Blog------------------------------------------->
+      <div id="blog">
+        <div class="container">
+            <div class="bl">
+            <h1 class="sub-title"><i>My</i><span> <i>Blogs</i></span></h1></div>
+            <div class="blog-list">
+                <div>
+                    <i class="fa-solid fa-blog"></i> 
+                    <h2>Week 1</h2>
+                    <p>Hello, My name is Sparsh aryal. I am from Budhanilkhanata -2, Kathmandu. Recently i have complete my +2 levels from Liverpool Int School. My semester at herald college started from 22nd Feb 2023. Talking about my first week experience in Herald College Kathmandu. I faced some problems at first. It's pretty hard for to make new friends for me but now i have made new friends. Talking about my overall experience in Herald i am having fun and enjoying my classes as well as friends. I had good conversation and interaction with my teachers. The modules which i will learn in this semester are: Academic skills and Team based learning, Introductory programming and problem solving, fundamental of computing and Web technologies</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-blog"></i>
+                    <h2>Week 2</h2>
+                    <p>Last week, I had post blog about my first weeks experience at Herald college. You all must be thinking, how did I end up choosing Herald College. It was very difficult while choosing a best college which provide Better opportunities and environment among various options I had choose Herald. Today I will be sharing my experience about how and why I ended up decided to be a part of Herald Student.</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-blog"></i>
+                    <h2>Week 3</h2>
+                    <p>Last week, I had shared about my experience about how did I end up choosing Herald College. The learning experience here is very effective and different. Today I will be sharing third week experience at Herald college.
+                        Herald college applies L-T-W (Lecture , Tutorial and Workshop) teaching method which has provided me with a unique learning experience.</p>
+                <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+ <!--------------------------------Contact------------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <h1 class="sub-title"><i>GET IN</i><span><i>Touch</i></span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>sparsharyal062@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+977 9866166222</p>
+                    <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/sparsh-aryal-8aab9026a/"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://twitter.com/SparshArl"><i class="fa-brands fa-twitter-square"></i></a>
+                       <a href="https://discord.com/user/798563887996731412"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                      <input type="text" name="Name"placeholder="Your Full-Name" required> 
+                      <input type="email" name="Email"placeholder="Your Email" required>  
+                      <textarea name="Message" rows="6"placeholder="Your Text"></textarea>
+                      <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="cop">
+       <p>Created By <span>Sparsh Aryal</span>  | Copyright © 2023 All rights <i class="fa-solid"></i></p> </div>
+    </div>
+ </div>
+</div> 
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script> 
+</body>
+</html>
